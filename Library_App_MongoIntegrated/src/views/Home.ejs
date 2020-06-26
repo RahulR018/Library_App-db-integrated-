@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href='/css/style.css'>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand titleBar py-3">
+        <!-- <a class="text-white ml-5" href="#">HOME</a>
+        <a class="text-white ml-4" href="./login.html">LOGIN</a>
+        <a class="text-white ml-4" href="./signup.html">SIGNUP</a> -->
+        <%for(i=0;i<nav.length;i++){%>
+            <a class="text-white ml-5" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        <%}%>
+    </nav>
+    <div class="container-fluid titleBar2 py-4">
+        <h1 class="display-3 ml-5 text-white pb-5"><strong>Library</strong></h1>
+    </div>
+    <div class="container bg-white info">
+        <div class="col-md-12 border-bottom border-muted my-1">
+            <ul class="list-unstyled">
+                <li class="media">
+                    <img class="mr-3 my-3 rounded-circle"
+                        src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?cs=srgb&dl=man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg&fm=jpg"
+                        height="100px" width="100px" alt="Image not found">
+                    <div class="media-body">
+                        <p class="text font-weight-bold mt-4 mb-1 ml-3">Repurpose Content to Reach a Wider Audience</p>
+                        <button class="p text-white rounded border bg-secondary mt-3 ml-3">87thfloor.com</button>
+                        <p class="ml-3 mt-2">2 hours Ago <a class="text-muted" href="#">&#9662;Read More</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md border-bottom border-muted my-2">
+            <ul class="list-unstyled">
+                <li class="media">
+                    <img class="mr-3 my-3 rounded-circle"
+                        src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        height="100px" width="100px" alt="Image not found">
+                    <div class="media-body">
+                        <p class="text font-weight-bold mt-4 mb-1 ml-3">14 Useful Sites for Designers</p>
+                        <button class="p text-white rounded border bg-secondary mt-3 ml-3">devgarage.com</button>
+                        <p class="ml-3 mt-2">Yesterday <a class="text-muted" href="#">&#9662;Read More</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md border-bottom border-muted my-2">
+            <ul class="list-unstyled">
+                <li class="media">
+                    <img class="mr-3 my-3 rounded-circle"
+                        src="https://images.pexels.com/photos/1793306/pexels-photo-1793306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        height="100px" width="100px" alt="Image not found">
+                    <div class="media-body">
+                        <p class="text font-weight-bold mt-4 mb-1 ml-3">Measuring Your Link Building With Google
+                            Analytics</p>
+                        <button
+                            class="p text-white rounded border bg-secondary mt-3 ml-3">searchenginewatch.com</button>
+                        <p class="ml-3 mt-2">Yesterday<a href="#" class="text-muted">&#9662;Read More</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="hide" class="col-md border-bottom border-muted my-2">
+            <ul class="list-unstyled">
+                <li class="media">
+                    <img class="mr-3 my-3 rounded-circle"
+                        src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                        height="100px" width="100px" alt="Image not found">
+                    <div class="media-body">
+                        <p class="text font-weight-bold mt-4 mb-1 ml-3">The Modern Web</p>
+                        <button
+                            class="p text-white rounded border bg-secondary mt-3 ml-3">csstricks.com</button>
+                        <p class="ml-3 mt-2">Yesterday<a href="#" class="text-muted">&#9662;Read More</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="hide" class="col-md border-bottom border-muted my-2">
+            <ul class="list-unstyled">
+                <li class="media">
+                    <img class="mr-3 my-3 rounded-circle"
+                        src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg"
+                        height="100px" width="100px" alt="Image not found">
+                    <div class="media-body">
+                        <p class="text font-weight-bold mt-4 mb-1 ml-3">The Fastest Google Fonts</p>
+                        <button
+                            class="p text-white rounded border bg-secondary mt-3 ml-3">csstricks.com</button>
+                        <p class="ml-3 mt-2">Yesterday<a href="#" class="text-muted">&#9662;Read More</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container text-right">
+            <button id='more/less' data-toggle='collapse' class="my-3 bg-primary text-white border border-primary"
+                data-target='#hide'>More/Less</button>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <h1 class="text-muted foot display-5 bold mt-3">Follow Us</h1>
+        <div class=" btn-group foot" role="group">
+            <button class="btn twt">Twitter</button>
+            <button class="btn fb">Facebook</button>
+            <button class="btn googleplus">Google+</button>
+        </div>
+    </footer>
+    <script src="/js/bootstrap.min.js" ></script>
+</body>
+
+</html>

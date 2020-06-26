@@ -1,0 +1,97 @@
+.titleBar{
+    background-color: #111166;
+}
+.titleBar2{
+    background-color: #000144;
+}
+body{
+    background-color: #efefef;
+}
+.info{
+    margin-top: -40px;
+    margin-left: 65px;
+}
+.text{
+    color: #828189;
+    font-size: 20px;
+}
+a:hover{
+    text-decoration-color: #efefef;
+    text-decoration: none;
+    text-shadow: 0px 0 4px  white;
+    cursor: default;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.signupbutton{
+    border-radius: 10px;
+}
+.signupbutton:hover{
+    box-shadow: 0 0 6px #111166;
+    outline: #111166;
+}
+.loginbutton{
+    color: white;
+    background-color: #111166;
+    border-radius: 10px;
+    outline:none;
+}
+.loginbutton:hover{
+    color: white;
+    box-shadow: 0 0 6px #111166;
+    outline: #000144;
+}
+.foot{
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+.fb{
+    background-color: #3b5998;
+    color: white;
+}
+.twt{
+    background-color: #1DA1F2;
+    color: #fff;
+}
+.googleplus{
+    background-color: #db3236;
+    color: #fff;
+}
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, select[type]:focus{   
+    border-color: #111166;
+    box-shadow: 0px 1px 1px #111166 inset, 0 0 8px #000144;
+    outline: #111166;
+}
+.formShadow{
+    border-radius: 30px;
+    box-shadow: 0 0 20px #111166;
+    outline: #111166;
+    border: #111166 2px solid;
+}
+.error{
+    border: red 1px solid;
+    animation:glow 1.5s infinite;
+}
+@keyframes glow{
+    0%,100%{
+        /* transform: translateX(0px); */
+        filter: drop-shadow()
+    }
+    33.3%{
+        /* transform: translateX(3px); */
+        filter: drop-shadow(-1px 0px 2px red)
+    }66.7%{
+        /* transform: translateX(-3px); */
+        filter: drop-shadow(1px 0px 2px darkred)
+    }
+}
+.dashinput{
+    position: relative;
+    left: 200px;
+}
+
