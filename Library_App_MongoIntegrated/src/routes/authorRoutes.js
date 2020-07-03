@@ -31,21 +31,30 @@ var authors = [
 authorsRouter.get('/', (req, res) => {
     res.render('authors', {
         title: 'Authors',
-        nav: [{ link: '/', name: 'HOME' },
-        { link: '/login', name: 'LOGOUT' },
-        { link: './authors', name: 'AUTHORS' },
-        { link: '/books', name: 'BOOKS' },],
+        nav: [
+            { link: '/admin', name: 'HOME' },
+            { link: '/login', name: 'LOGOUT' },
+            { link: '/admin/authors', name: 'AUTHORS' },
+            { link: '/admin/books', name: 'BOOKS' },
+            { link: '/admin/addAuthor', name: 'ADD AUTHOR' },
+            { link: '/admin/addBook', name: 'ADD BOOK' }
+        ],
         authors
     })
 });
 
+
 authorsRouter.get('/:i', function (req, res) {
     const i = req.params.i
     res.render('author', {
-        nav: [{ link: '/', name: 'HOME' },
-        { link: '/login', name: 'LOGOUT' },
-        { link: '/login/authors', name: 'AUTHORS' },
-        { link: '/books', name: 'BOOKS' }],
+        nav: [
+            { link: '/admin', name: 'HOME' },
+            { link: '/login', name: 'LOGOUT' },
+            { link: '/admin/authors', name: 'AUTHORS' },
+            { link: '/admin/books', name: 'BOOKS' },
+            { link: '/admin/addAuthor', name: 'ADD AUTHOR' },
+            { link: '/admin/addBook', name: 'ADD BOOK' }
+        ],
         author: authors[i],
         title: "Author Bio"
     });

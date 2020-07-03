@@ -20,42 +20,49 @@
     </div>
     <div class="container col">
         <form id="form" class="container col-md-5 signupform bg-white my-4 py-3 border border-light formShadow"
-            action="<%=go.link%>" onsubmit="return validate()">
+            action="signup/login" method="GET" onsubmit="return validate()">
             <h1 class="display-4 text-center">SIGN UP</h1>
             <div class="form-group ">
-                <input type="text" class="form-control" id="fstName" data-toggle='tooltip' aria-describedby="fstNameHelp"placeholder="First Name">
+                <input type="text" class="form-control" id="fstName" name="fstName" data-toggle='tooltip' aria-describedby="fstNameHelp"placeholder="First Name">
                 <small id="fstNameHelp" class=" "></small>
             </div>
             <div class="form-group ">
-                <input type=''class="form-control" id="lstName" aria-describedby="lstNameHelp" placeholder="Last Name">
+                <input type='text' class="form-control" id="lstName" name="lstName" aria-describedby="lstNameHelp" placeholder="Last Name">
                 <small id="lstNameHelp" class=" "></small>
             </div>
             <div class="form-group ">
-                <input type="date" class="form-control" id="dob" aria-describedby="dobHelp" placeholder="Date Of Birth">
+                <input type="date" class="form-control" id="dob" name="dob" aria-describedby="dobHelp" placeholder="Date Of Birth">
                 <small id="dobHelp" class=" "></small>
             </div>
             <div class="media">
                 <p class="mt-2">Please Select Gender</p>
-                <select type =''class="custom-select ml-5 mb-3" style="width: 200px; position: relative;left: 123px;;">
+                <select type =''class="custom-select ml-5 mb-3" id="gender" name="gender" style="width: 200px; position: relative;left: 123px;;">
                     <option value="1 ">Male</option>
                     <option value="2 ">Female</option>
                     <option value="3 ">Prefer Not to Say</option>
                 </select>
             </div>
+            <div class="media">
+                <p class="mt-2">Select User Type</p>
+                <select id="user" name="user" type =''class="custom-select usrtype mb-3" style="width: 200px; position: relative;left: 123px;;">
+                    <option value="1 ">Student</option>
+                    <option value="2 ">Admin</option>
+                </select>
+            </div>
             <div class="form-group">
-                <input type="" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class=""></small>
             </div>
             <div class="form-group ">
-                <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
                 <small id="passHelp" class=""></small>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="confirmpassword" placeholder="Re-enter Password">
+                <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Re-enter Password">
                 <small id="confpassHelp" class=""> </small>
             </div>
             <div class="form-group ">
-                <input type="tel" class="form-control" id="telephone" placeholder="Enter Phone Number">
+                <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Enter Phone Number">
                 <small id="teleHelp" class=""></small>
             </div>
             <div class="form-group text-center">

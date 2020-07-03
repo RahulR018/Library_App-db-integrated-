@@ -94,4 +94,6 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, select[
     position: relative;
     left: 200px;
 }
-
+.usrtype{
+    margin-left: 80px;
+}

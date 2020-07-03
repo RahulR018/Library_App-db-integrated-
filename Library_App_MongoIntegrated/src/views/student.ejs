@@ -18,24 +18,23 @@
     <div class="container-fluid titleBar2 py-4">
         <h1 class="display-3 ml-5 text-white pb-5"><strong><%=title%></strong></h1>
         </div>
-        <div class="container ">
-            <form class="container col-md-5 signupform bg-white my-4 py-3 formShadow" method="GET"
-                action="/admin/addAuthor/add" , onsubmit="return validate()">
-                <label class="form-label ">ENTER AUTHOR NAME:</label>
-                <input class="form-control " type="text" placeholder="Author Name" id="name" name="name">
-                <br>
-                <label class="form-label">ENTER AUTHOR BOOK:</label>
-                <input class="form-control " type="text" placeholder="Author Book" id="book" name="book">
-                <br>
-                <div class="custom-file mb-3">
-                    <label class="custom-file-label">UPLOAD IMAGE:</label>
-                    <input class="custom-file-input" type="file" id="image" name="image">
-                </div>
-                <br>
-                <div class="text-center">
-                    <button type="submit" class="btn loginbutton" id="add">ADD</button>
-                </div>
-            </form>
+        <div class="container bg-white info">
+
+            <div class="col-md-12 border-bottom border-muted my-1">
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img class="mr-3 my-3 rounded-circle" src="/images/<%=author.img%>" height="100px" width="100px"
+                            alt="Image not found">
+                        <div class="media-body">
+                            <p class="text font-weight-bold mt-4 mb-1 ml-3"><%=author.name%>
+                            </p>
+                            <button class="p text-white rounded border bg-secondary mt-3 ml-3"><%=author.book%></button>
+                            <p class="ml-3 mt-2"><%=author.genre%></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
         <footer class="border bt-2 my-3">
             <h1 class="text-muted foot display-5 bold mt-3">Follow Us</h1>
@@ -46,7 +45,6 @@
             </div>
         </footer>
         <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/addAuthor.js"></script>
 </body>
 
 </html>

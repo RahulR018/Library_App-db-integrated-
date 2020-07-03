@@ -9,6 +9,8 @@ var emailAlert = document.getElementById('emailHelp');
 var passAlert = document.getElementById('passHelp');
 var confirmAlert = document.getElementById('confpassHelp');
 var teleAlert = document.getElementById('teleHelp');
+var gender= document.getElementById('gender');
+var user=document.getElementById('user');
 var emaildata = [];
 var passdata = [];
 var namepattern = /[?={}|/\\[\]\.\`\,\;\+\-\"\'\<\>\:\d~!@#$%^&*\s_]/;
